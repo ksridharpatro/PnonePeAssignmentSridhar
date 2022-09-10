@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/movie_item_padding">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/movieImage"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/movie_image_height"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textMovieName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movieImage"
+        tools:text="Movie Name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textRatting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textMovieName"
+        tools:text="Ratting " />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textPlayLists"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textRatting"
+        tools:text="PlayList1, Playlist2... " />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
