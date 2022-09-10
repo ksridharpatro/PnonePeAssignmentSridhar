@@ -20,7 +20,7 @@
         android:id="@+id/textMovieName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnAddToPlaylist"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/movieImage"
         tools:text="Movie Name" />
@@ -29,7 +29,7 @@
         android:id="@+id/textRatting"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnAddToPlaylist"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textMovieName"
         tools:text="Ratting " />
@@ -38,9 +38,18 @@
         android:id="@+id/textPlayLists"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnAddToPlaylist"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textRatting"
         tools:text="PlayList1, Playlist2... " />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddToPlaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_add_to_playlist"
+        app:layout_constraintBottom_toBottomOf="@id/textPlayLists"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textMovieName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
